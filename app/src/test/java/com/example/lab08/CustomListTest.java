@@ -22,7 +22,7 @@ public class CustomListTest {
         cityList.addCity(city);
 
         assertThrows(NoSuchElementException.class, () -> {
-            cityList.deleteCity(new City("Edmonton", "Alberta"));
+            cityList.deleteCity(new City("Edmonton", "Vancouver"));
         });
         cityList.deleteCity(city);
         assertFalse(cityList.hasCity(city));
