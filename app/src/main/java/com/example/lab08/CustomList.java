@@ -27,4 +27,8 @@ public class CustomList {
             throw new NoSuchElementException("This city is not present in the list.");
         }
     }
+
+    public int countCities() {
+        return cities.size();
+    }
 }
